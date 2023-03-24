@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if Statement</title>
+</head>
+<body>
+    <h1>Nested if Statement</h1>
+
+    <script>
+        // let userIsActive = true;
+        // let userCredits = 340;
+
+        // if(userIsActive){
+        //     if(userCredits > 0){
+        //         console.log("You are welcome in the game");
+        //     }
+        // }
+
+
+        let dbEmail = "abc.@abc.com";
+        let dbPassword = "1234";
+
+        let userInputEmail = prompt("Enter your Email to login");
+        let userPassword   = prompt("Enter your password to login");
+
+        if(userInputEmail === dbEmail){
+            if(userPassword === dbPassword){
+                console.log("Login successful");
+            }else{
+                console.log("Wrong passwrod");
+            }
+        }else{
+            console.log("You entered wrong email");
+        }
+    </script>
+</body>
+</html>
